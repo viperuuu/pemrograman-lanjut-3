@@ -1,0 +1,96 @@
+Fitur Program
+
+Input data mahasiswa:
+
+Nama lengkap
+
+Umur
+
+NIM
+
+Nilai
+
+Validasi input nilai (harus berupa angka).
+
+Menentukan kelulusan berdasarkan nilai:
+
+Lulus jika nilai ≥ 75
+
+Tidak lulus jika nilai < 75
+
+⚙️ Cara Menjalankan Program
+
+Pastikan kamu sudah menginstal Java (minimal JDK 8).
+Untuk memeriksa, jalankan perintah berikut di terminal atau command prompt:
+
+java -version
+
+
+Simpan kode berikut ke dalam file bernama Main.java:
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("masukan nama lengkap anda: ");
+        String nama = scanner.nextLine();
+
+        System.out.print("masukan umur anda: ");
+        String umur = scanner.nextLine();
+
+        System.out.println("masukan nim anda: ");
+        String nim = scanner.nextLine();
+
+        System.out.print("masukan nilai anda: ");
+        String nilai = scanner.nextLine();
+
+        try {
+            int nilaiInt = Integer.parseInt(nilai.trim());
+            System.out.println("halo nama saya: " + nama);
+            System.out.println("umur saya: " + umur);
+            System.out.println("nim anda: " + nim);
+
+            if (nilaiInt >= 75) {
+                System.out.println("selamat anda lulus");
+            } else {
+                System.out.println("maaf anda tidak lulus");
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Nilai tidak valid — masukkan angka yang benar.");
+        }
+        scanner.close();
+    }
+}
+
+
+Kompilasi program dengan perintah:
+
+javac Main.java
+
+
+Jalankan program:
+
+java Main
+
+💡 Contoh Output
+masukan nama lengkap anda: Fawaz Ainun
+masukan umur anda: 20
+masukan nim anda: 2310506001
+masukan nilai anda: 80
+
+halo nama saya: Fawaz Ainun
+umur saya: 20
+nim anda: 2310506001
+selamat anda lulus
+
+🧠 Penjelasan Singkat
+
+Program menggunakan Scanner untuk membaca input dari pengguna.
+
+Nilai diubah menjadi tipe data int menggunakan Integer.parseInt().
+
+Struktur try-catch digunakan untuk menangani kesalahan input (misalnya, jika nilai bukan angka).
+
+Menggunakan if-else untuk menentukan status kelulusan.
