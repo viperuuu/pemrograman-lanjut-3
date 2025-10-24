@@ -11,6 +11,8 @@ public class Main {
         System.out.print("masukan umur anda: ");
         String umur = scanner.nextLine();
 
+        System.out.println("masukan nim anda: ");
+        String nim = scanner.nextLine();
 
         System.out.print("masukan nilai anda: ");
         String nilai = scanner.nextLine();
@@ -20,6 +22,7 @@ public class Main {
             int nilaiInt = Integer.parseInt(nilai.trim());
             System.out.println("halo nama saya: " + nama);
             System.out.println("umur saya: " + umur);
+            System.out.println("nim anda: " + nim);
 
             if (nilaiInt >= 75) {
                 System.out.println("selamat anda lulus");
