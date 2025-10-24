@@ -14,7 +14,7 @@ public class Main {
         System.out.println("masukan nim anda: ");
         String nim = scanner.nextLine();
 
-        System.out.print("masukan nilai anda: ");
+        System.out.print("masukan angka: ");
         String nilai = scanner.nextLine();
 
 
