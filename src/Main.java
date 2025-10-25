@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main extends main.mahasiswa {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,10 +11,10 @@ public class Main {
         System.out.print("masukan umur anda: ");
         String umur = scanner.nextLine();
 
-        System.out.println("masukan nim anda: ");
+        System.out.print("masukan nim anda: ");
         String nim = scanner.nextLine();
 
-        System.out.print("masukan angka: ");
+        System.out.print("masukan nilai akhir: ");
         String nilai = scanner.nextLine();
 
 
@@ -23,6 +23,7 @@ public class Main {
             System.out.println("halo nama saya: " + nama);
             System.out.println("umur saya: " + umur);
             System.out.println("nim anda: " + nim);
+            System.out.println("nilai akhir anda: " + nilai);
 
             if (nilaiInt >= 75) {
                 System.out.println("selamat anda lulus");
